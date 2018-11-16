@@ -1,0 +1,88 @@
+cps(1)
+cps(0.95)
+cps(0.8)
+
+hush
+
+-- part
+hush
+
+-- part
+d1 $ sound "koy:2"
+d1 silence
+d3 $ sound "~ cp"
+d3 silence
+d4 $sound "flick:5"
+
+d6 $ up "7 0 2 0" # sound "blip"
+d7 $ midinote "68 ~ 73 73" # s "bass3"
+
+hush
+
+-- first part
+d1 $ sound "arpy(3,8)"
+d1 $ sound "arpy(3,8)" # n 2
+
+d2 $ sound "hh*6"
+d2 $ sound "hh*8"
+d2 $ sound "hh*16"
+d3 $ sound "~ cp"
+d4 $ sound "drum:8*4"
+d5 $ sound "bd*2"
+d5 $ sound "bd"
+
+
+d4 silence
+d5 silence
+d1 silence
+
+-- second part
+
+d1 silence
+d2 $ sound "hh*16"
+d2 $ sound "hh*6"
+d2 $ sound "hh*8"
+d1 $ sound "[bd*2, ~ cp*4?, drum:8*4, cp/2]"
+d1 $ sound "[bd*2, ~ cp*4?, drum:8*4, cp/2, h:2]"
+d4 $ up "0 0 0" # sound "arpy"
+d4 $ up "0 0 0 0 0 0" # sound "arpy"
+d4 $ up "3 3 3 3 3 3" # sound "arpy"
+d5 $ sound "bd"
+
+
+d1 silence
+d4 silence
+
+-- third part
+
+d6 $ up "0 2 2 8 12 12" # sound "arpy"
+d6 $ up "0 2 2 7 12 12" # sound "arpy"
+d6 $ up "0 2 2 6 12 12" # sound "arpy"
+
+d2 $ sound "hh*8" # crush "4"
+d3 $ sound "~ cp"
+d9 $ sound "bd*2"
+
+d6 silence
+
+-- fourth part
+
+d9 $ sound "bass1:4"
+d2 $ sound "808bd:4*8?"
+d1 $ sound "ul:8"
+d3 $ sound "[bd*2, ~ cp*4?, drum:8*4, cp/2]"
+
+d2 silence
+d1 silence
+d9 silence
+
+-- finish
+
+d1 $sound "rave:7"
+d1 $sound "rave:7*2"
+d1 $sound "rave:7*4"
+d1 $sound "rave:7*8"
+d1 $sound "rave:7*16"
+d1 $ sound "austin:1/4"
+
+hush
